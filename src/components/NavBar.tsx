@@ -4,7 +4,7 @@ import { colors } from "@mui/material";
 const NavBar = () => {
   return (
     <>
-      <ul className=" flex justify-around hidden sm:flex text-[18px] text-white sm:w-[436px] sm:items-center font-cardo">
+      <ul className=" flex justify-around hidden sm:flex text-[18px] text-white sm:w-[436px] sm:items-center font-cardo ">
         <li className="hover:border-b-2 border-[#A08D8D]">
           <a href="#">Nosotros</a>
         </li>

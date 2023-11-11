@@ -1,10 +1,7 @@
 :root {
-  font-family: ;
-
   background-image: url("../public/bg.jpeg");
   height: 100%;
   background-size: cover;
-
 }
 
 @tailwind base;
@@ -12,4 +9,7 @@
 @tailwind utilities;
 
 
-
+@font-face {
+  font-family: Raj;
+  src: url("./assets//fonts/RalewayDots-Regular.ttf") format("opentype");
+}
