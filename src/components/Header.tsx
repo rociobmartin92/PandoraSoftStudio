@@ -1,11 +1,10 @@
-import React from "react";
-import Logobig from "../../public/Logobig.png";
 import NavBar from "./NavBar";
+import pandora from "../assets/pandora.png";
 
 export const Header = () => {
   return (
-    <header className="bg-red-700 flex justify-between w-[100%] ">
-      <img src={Logobig} style={{ height: "150px", width: "150px" }} />
+    <header className="flex justify-between w-[100%] ">
+      <img src={pandora} style={{ height: "50px" }} />
       <NavBar />
     </header>
   );
