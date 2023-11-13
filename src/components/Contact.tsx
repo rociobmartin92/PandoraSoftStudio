@@ -170,8 +170,10 @@ export const Contact = () => {
               </div>
             </div>
           </div>
-          <button className="mt-8" type="submit">
-            {" "}
+          <button
+            className="mt-8 p-2 border-[#1f203c] border-2 rounded-lg"
+            type="submit"
+          >
             Enviar
           </button>
         </form>
