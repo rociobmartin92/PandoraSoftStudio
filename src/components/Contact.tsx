@@ -11,7 +11,11 @@ type IFormInput = {
 };
 
 export const Contact = () => {
-  const { handleSubmit, register } = useForm({
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = useForm({
     defaultValues: {
       name: "",
       email: "",
@@ -24,8 +28,10 @@ export const Contact = () => {
   });
 
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
-    console.log(data);
+    console.log("DATA", data);
   };
+
+  console.log(errors);
 
   return (
     <section
@@ -52,24 +58,33 @@ export const Contact = () => {
               </label>
               <div className="mt-2">
                 <input
-                  {...register("name")}
+                  {...register("name", { required: true })}
                   type="text"
                   className=" pl-3 block w-full font-extrabold rounded-md text-black border-0 py-1.5 shadow-sm sm:text-sm sm:leading-6"
                 />
               </div>
+              {errors.name && (
+                <span className="text-xs text-yellow-400">
+                  Este campo es requerido
+                </span>
+              )}
             </div>
-
             <div className="sm:col-span-3">
               <label className="block text-sm font-medium leading-6 text-white">
                 Email
               </label>
               <div className="mt-2">
                 <input
-                  {...register("email")}
+                  {...register("email", { required: true })}
                   type="email"
                   className=" pl-3 block w-full font-extrabold text-black rounded-md border-0 py-1.5 shadow-sm sm:text-sm sm:leading-6"
                 />
               </div>
+              {errors.email && (
+                <span className="text-xs text-yellow-400">
+                  Este campo es requerido
+                </span>
+              )}
             </div>
 
             <div className="sm:col-span-4">
@@ -78,11 +93,16 @@ export const Contact = () => {
               </label>
               <div className="mt-2">
                 <input
-                  {...register("description")}
+                  {...register("description", { required: true })}
                   type="text"
                   className=" pl-3 block w-full font-extrabold text-black rounded-md border-0 py-1.5 shadow-sm sm:text-sm sm:leading-6"
                 />
               </div>
+              {errors.description && (
+                <span className="text-xs text-yellow-400">
+                  Este campo es requerido
+                </span>
+              )}
             </div>
 
             <div className="sm:col-span-3">
@@ -91,7 +111,7 @@ export const Contact = () => {
               </label>
               <div className="mt-2">
                 <select
-                  {...register("project")}
+                  {...register("project", { required: true })}
                   className="pl-3 block w-full rounded-md border-0 py-2 text-black shadow-sm   sm:max-w-xs sm:text-sm sm:leading-6"
                 >
                   <option value="we">Web estática</option>
@@ -100,6 +120,11 @@ export const Contact = () => {
                   <option value="de">Diseño</option>
                 </select>
               </div>
+              {errors.project && (
+                <span className="text-xs text-yellow-400">
+                  Este campo es requerido
+                </span>
+              )}
             </div>
 
             <div className="sm:col-span-2 sm:col-start-1">
@@ -145,7 +170,10 @@ export const Contact = () => {
               </div>
             </div>
           </div>
-          <input type="submit" />
+          <button className="mt-8" type="submit">
+            {" "}
+            Enviar
+          </button>
         </form>
       </div>
     </section>
