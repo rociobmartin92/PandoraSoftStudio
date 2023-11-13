@@ -2,6 +2,8 @@
   background-image: url("../public/bg.jpeg");
   height: 100%;
   background-size: cover;
+  box-sizing: border-box;
+  background-repeat: repeat
 }
 
 @tailwind base;
@@ -12,4 +14,10 @@
 @font-face {
   font-family: Raj;
   src: url("./assets//fonts/RalewayDots-Regular.ttf") format("opentype");
+}
+
+/* styles.css (o tu archivo de estilos) */
+
+.hover\:shadow-white:hover {
+  box-shadow: 8px 8px 15px rgba(163, 163, 163, 0.8); /* Ajusta el valor según tus preferencias */
 }

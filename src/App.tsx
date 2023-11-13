@@ -1,11 +1,12 @@
 import "./App.css";
-import { Stack, Typography } from "@mui/material";
 import Logo from "../public/Logo.jpg";
 import { useState } from "react";
-import NavBar from "./components/NavBar";
 import { Header } from "./components/Header";
 import { MainComponent } from "./components/MainComponent";
 import { About } from "./components/About";
+import { Clients } from "./components/Clients";
+import { Stack } from "@mui/material";
+import { Contact } from "./components/Contact";
 
 function App() {
   const [show, setShow] = useState(true);
@@ -26,6 +27,8 @@ function App() {
             <Header />
             <MainComponent />
             <About />
+            <Clients />
+            <Contact />
           </div>
         )}
       </Stack>

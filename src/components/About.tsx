@@ -1,19 +1,21 @@
-import React from "react";
-
 export const About = () => {
   return (
-    <section className="text-white font-raj text-center px-[15%] mt-1">
+    <section
+      id="About"
+      className="text-white font-raj text-center px-[15%] mt-12"
+    >
       <p className="text-2xl mb-5">Sobre Pandora </p>
       <p className=" text-lg line-height: 7rem">
         Pandora es una empresa de servicio completo que ofrece desarrollo web,
         desarrollo de aplicaciones móviles y servicios de diseño personalizados
         para tu negocio.
       </p>
-      <p>
+      <p className=" text-lg line-height: 7rem">
+        Somos profesionales localizados en todo El Valle de Río Negro y Neuquén
         Ayudamos a las marcas locales a prosperar online y nos especializamos en
-        trabajar con emprendedores de todo El Valle de Río Negro y Neuquén.
+        trabajar con emprendedores.
       </p>
-      <p className="mt-2">
+      <p className="mt-6 text-lg line-height: 7rem">
         Contamos con la confianza de personas que apuestan a un negocio digital
         para seguir expandiendose y prosperando. <br /> De personas que quieren
         dar a conocer su creatividad y servicios de en el mundo del internet.{" "}

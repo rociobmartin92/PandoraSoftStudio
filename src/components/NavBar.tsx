@@ -1,18 +1,17 @@
-import React from "react";
-import menu from "../assets/menu.png";
-import { colors } from "@mui/material";
+import menu from "../assets/images/menu.png";
+
 const NavBar = () => {
   return (
     <>
       <ul className=" flex justify-around hidden sm:flex text-[18px] text-white sm:w-[436px] sm:items-center font-cardo ">
         <li className="hover:border-b-2 border-[#A08D8D]">
-          <a href="#">Nosotros</a>
+          <a href="#About">Nosotros</a>
         </li>
         <li className="hover:border-b-2 border-[#A08D8D]">
-          <a href="#">Nuestros clientes</a>
+          <a href="#Clients">Servicios</a>
         </li>
         <li className="hover:border-b-2 border-[#A08D8D]">
-          <a href="#">Contacto</a>
+          <a href="#Contact">Contacto</a>
         </li>
       </ul>
       <img
