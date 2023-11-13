@@ -7,6 +7,7 @@ import { About } from "./components/About";
 import { Clients } from "./components/Clients";
 import { Stack } from "@mui/material";
 import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [show, setShow] = useState(true);
@@ -29,6 +30,7 @@ function App() {
             <About />
             <Clients />
             <Contact />
+            <Footer />
           </div>
         )}
       </Stack>
