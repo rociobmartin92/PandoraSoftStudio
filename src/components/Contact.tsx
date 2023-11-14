@@ -1,4 +1,6 @@
 import { useForm, SubmitHandler } from "react-hook-form";
+import instagra from "../assets/instagram.svg";
+import whatsapp from "../assets/whatsapp.svg";
 
 type IFormInput = {
   name: string;
@@ -42,15 +44,25 @@ export const Contact = () => {
         <p className="text-2xl mb-5 animate__animated animate__slideInLeft">
           Contáctanos:
         </p>
-        <p>ventas@empdigital.cl</p>
-        <p>C+56 9 6645 9934</p>
+        <p>martinrocio.1992@gmail.com</p>
+        <p>+54 2984391081</p>
+        <div className="flex mt-5 cursor-pointer">
+          <a href="https://api.whatsapp.com/send?phone=542984391081&text=">
+            <img className="w-7 " src={whatsapp} alt="insta" />
+          </a>
+          <img className="w-8 ml-8" src={instagra} alt="whats" />
+        </div>
       </div>
 
       <div className="border-b border-gray-900/10 ml-[100px]">
         <p className="text-2xl mb-5 animate__animated animate__slideInLeft">
           Cotizá con nosotros:
         </p>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          action="https://formsubmit.co/martinrocio.1992@gmail.com"
+          method="POST"
+        >
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-3">
               <label className="block text-sm font-medium leading-6 text-white">
@@ -171,7 +183,7 @@ export const Contact = () => {
             </div>
           </div>
           <button
-            className="mt-8 p-2 border-[#1f203c] border-2 rounded-lg"
+            className="mt-8 p-2 border-[#1f203c] border-2 rounded-lg  hover:border-[#2d2e46]"
             type="submit"
           >
             Enviar
