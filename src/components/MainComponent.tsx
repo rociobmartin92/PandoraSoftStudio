@@ -1,6 +1,4 @@
-import React from "react";
 import imgmain from "../assets/images/imgmain4.png";
-import { About } from "./About";
 
 export const MainComponent = () => {
   return (

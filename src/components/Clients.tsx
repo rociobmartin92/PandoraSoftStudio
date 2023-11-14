@@ -1,7 +1,7 @@
 import app from "../assets/images/app.png";
 import web from "../assets/images/web.png";
 import diseños from "../assets/images/diseños.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Clients = () => {
   return (

@@ -1,13 +1,9 @@
 import "./App.css";
 import Logo from "../public/Logo.jpg";
 import { useState } from "react";
-import { Header } from "./components/Header";
-import { MainComponent } from "./components/MainComponent";
-import { About } from "./components/About";
-import { Clients } from "./components/Clients";
+
 import { Stack } from "@mui/material";
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
+
 import { Routes, Route } from "react-router-dom";
 import { Mobile } from "./screens/Mobile";
 import { Web } from "./screens/Web";
