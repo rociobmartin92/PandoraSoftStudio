@@ -8,6 +8,11 @@ import { Clients } from "./components/Clients";
 import { Stack } from "@mui/material";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import { Mobile } from "./screens/Mobile";
+import { Web } from "./screens/Web";
+import { Design } from "./screens/Design";
+import { Main } from "./screens/Main";
 
 function App() {
   const [show, setShow] = useState(true);
@@ -24,14 +29,18 @@ function App() {
             <img src={Logo} style={{ height: "350px", width: "350px" }} />
           </div>
         ) : (
-          <div className="w-[100%]">
-            <Header />
-            <MainComponent />
-            <About />
-            <Clients />
-            <Contact />
-            <Footer />
-          </div>
+          <>
+            {/* <div className="w-[100%]">
+              <Main />
+            </div> */}
+            <Routes>
+              <Route path="/" element={<Main />} />
+
+              <Route path="/mobile" element={<Mobile />} />
+              <Route path="/web" element={<Web />} />
+              <Route path="/design" element={<Design />} />
+            </Routes>
+          </>
         )}
       </Stack>
     </div>

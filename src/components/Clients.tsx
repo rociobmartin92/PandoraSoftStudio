@@ -1,6 +1,7 @@
 import app from "../assets/images/app.png";
 import web from "../assets/images/web.png";
 import diseños from "../assets/images/diseños.png";
+import { Link, NavLink } from "react-router-dom";
 
 export const Clients = () => {
   return (
@@ -17,8 +18,9 @@ export const Clients = () => {
             src={app}
             alt="webimg"
           />
-
-          <p className="mt-7 ">Soluciones móviles</p>
+          <Link to="/mobile">
+            <p className="mt-7 ">Soluciones móviles</p>
+          </Link>
         </div>
         <div className="mx-5 hover:text-lg ">
           <img
@@ -26,8 +28,9 @@ export const Clients = () => {
             src={web}
             alt="movimg"
           />
-
-          <p className="mt-7">Soluciones web</p>
+          <Link to="/web">
+            <p className="mt-7">Soluciones web</p>
+          </Link>
         </div>
         <div className="mx-5  hover:text-lg ">
           <img
@@ -35,8 +38,9 @@ export const Clients = () => {
             src={diseños}
             alt="desimg"
           />
-
-          <p className="mt-7">Diseños digitales</p>
+          <Link to="/design">
+            <p className="mt-7">Diseños digitales</p>
+          </Link>
         </div>
       </div>
     </section>

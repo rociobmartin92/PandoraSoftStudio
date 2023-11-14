@@ -41,9 +41,7 @@ export const Contact = () => {
       className="text-white font-raj flex items-baseline  px-[15%] mt-[120px] mb-6 w-screen"
     >
       <div className="">
-        <p className="text-2xl mb-5 animate__animated animate__slideInLeft">
-          Contáctanos:
-        </p>
+        <p className="text-2xl mb-5 ">Contáctanos:</p>
         <p>martinrocio.1992@gmail.com</p>
         <p>+54 2984391081</p>
         <div className="flex mt-5 cursor-pointer">
@@ -55,9 +53,7 @@ export const Contact = () => {
       </div>
 
       <div className="border-b border-gray-900/10 ml-[100px]">
-        <p className="text-2xl mb-5 animate__animated animate__slideInLeft">
-          Cotizá con nosotros:
-        </p>
+        <p className="text-2xl mb-5 ">Cotizá con nosotros:</p>
         <form
           onSubmit={handleSubmit(onSubmit)}
           action="https://formsubmit.co/martinrocio.1992@gmail.com"
