@@ -13,34 +13,34 @@ export const Clients = () => {
 
       <div className="flex ">
         <div className="mx-5  hover:text-lg ">
-          <img
-            className="sm:w-[700px] rounded-md hover:shadow-white"
-            src={app}
-            alt="webimg"
-          />
           <Link to="/mobile">
-            <p className="mt-7 ">Soluciones móviles</p>
+            <img
+              className="sm:w-[700px] rounded-md hover:shadow-white"
+              src={app}
+              alt="webimg"
+            />
           </Link>
+          <p className="mt-7 ">Soluciones móviles</p>
         </div>
         <div className="mx-5 hover:text-lg ">
-          <img
-            className="sm:w-[700px] rounded-md hover:shadow-white"
-            src={web}
-            alt="movimg"
-          />
           <Link to="/web">
-            <p className="mt-7">Soluciones web</p>
+            <img
+              className="sm:w-[700px] rounded-md hover:shadow-white"
+              src={web}
+              alt="movimg"
+            />
           </Link>
+          <p className="mt-7">Soluciones web</p>
         </div>
         <div className="mx-5  hover:text-lg ">
-          <img
-            className="sm:w-[700px] rounded-md hover:shadow-white"
-            src={diseños}
-            alt="desimg"
-          />
           <Link to="/design">
-            <p className="mt-7">Diseños digitales</p>
+            <img
+              className="sm:w-[700px] rounded-md hover:shadow-white"
+              src={diseños}
+              alt="desimg"
+            />
           </Link>
+          <p className="mt-7">Diseños digitales</p>
         </div>
       </div>
     </section>
