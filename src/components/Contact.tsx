@@ -58,7 +58,7 @@ export const Contact = () => {
         <p className="text-2xl sm:mb-5 mb-0 ">Cotizá con nosotros:</p>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          action="https://formsubmit.co/martinrocio.1992@gmail.com"
+          action="https://us-central1-tu-proyecto-id.cloudfunctions.net/sendEmail" // Reemplaza con la URL de tu función
           method="POST"
         >
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
