@@ -38,9 +38,9 @@ export const Contact = () => {
   return (
     <section
       id="Contact"
-      className="text-white font-raj flex items-baseline  px-[15%] mt-[120px] mb-6 w-screen"
+      className="text-white font-raj sm:flex items-baseline  px-[15%] mt-[120px] mb-6 w-screen"
     >
-      <div className="">
+      <div className="sm:text-center">
         <p className="text-2xl mb-5 ">Contáctanos:</p>
         <p>martinrocio.1992@gmail.com</p>
         <p>+54 2984391081</p>
@@ -48,12 +48,14 @@ export const Contact = () => {
           <a href="https://api.whatsapp.com/send?phone=542984391081&text=">
             <img className="w-7 " src={whatsapp} alt="insta" />
           </a>
-          <img className="w-8 ml-8" src={instagra} alt="whats" />
+          <a>
+            <img className="w-8 ml-8" src={instagra} alt="whats" />
+          </a>
         </div>
       </div>
 
-      <div className="border-b border-gray-900/10 ml-[100px]">
-        <p className="text-2xl mb-5 ">Cotizá con nosotros:</p>
+      <div className="border-b border-gray-900/10 sm:ml-[100px] mt-[40px]">
+        <p className="text-2xl sm:mb-5 mb-0 ">Cotizá con nosotros:</p>
         <form
           onSubmit={handleSubmit(onSubmit)}
           action="https://formsubmit.co/martinrocio.1992@gmail.com"

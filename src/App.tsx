@@ -13,6 +13,7 @@ import { Main } from "./screens/Main";
 function App() {
   const [show, setShow] = useState(true);
 
+
   setTimeout(() => {
     setShow(false);
   }, 2000);
