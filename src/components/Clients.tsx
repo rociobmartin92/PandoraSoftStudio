@@ -9,33 +9,33 @@ export const Clients = () => {
       id="Clients"
       className="text-white font-raj text-center px-[15%] mt-[120px] mb-6 w-screen "
     >
-      <p className="text-2xl mb-5">Servicios</p>
+      <p className="sm:text-2xl text-xl mb-5">Servicios</p>
 
       <div className="flex ">
-        <div className="mx-5  hover:text-lg ">
+        <div className="sm:mx-5 mx-2  hover:text-xl ">
           <Link to="/mobile">
             <img
-              className="sm:w-[700px] rounded-md hover:shadow-white"
+              className="sm:w-[700px] w-[1000px] rounded-md hover:shadow-white"
               src={app}
               alt="webimg"
             />
           </Link>
           <p className="mt-7 ">Soluciones móviles</p>
         </div>
-        <div className="mx-5 hover:text-lg ">
+        <div className="sm:mx-5 mx-2 hover:text-xl ">
           <Link to="/web">
             <img
-              className="sm:w-[700px] rounded-md hover:shadow-white"
+              className="sm:w-[700px] w-[1000px]  rounded-md hover:shadow-white"
               src={web}
               alt="movimg"
             />
           </Link>
           <p className="mt-7">Soluciones web</p>
         </div>
-        <div className="mx-5  hover:text-lg ">
+        <div className="sm:mx-5 mx-2  hover:text-xl ">
           <Link to="/design">
             <img
-              className="sm:w-[700px] rounded-md hover:shadow-white"
+              className="sm:w-[700px] w-[1000px] rounded-md hover:shadow-white"
               src={diseños}
               alt="desimg"
             />
