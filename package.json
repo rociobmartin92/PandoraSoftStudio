@@ -10,15 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.18",
     "@mui/material": "^5.14.18",
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.16",
-    "dotenv": "^16.3.1",
     "firebase-tools": "^12.8.1",
     "global": "^4.4.0",
+    "install": "^0.13.0",
     "nodemailer": "^6.9.7",
     "postcss": "^8.4.31",
     "react": "^18.2.0",
@@ -28,12 +29,12 @@
     "tailwindcss": "^3.3.5"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.14",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
-    "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "typescript": "^5.0.2",
