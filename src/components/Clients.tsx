@@ -12,30 +12,30 @@ export const Clients = () => {
       <p className="sm:text-2xl text-xl mb-5">Servicios</p>
 
       <div className="flex ">
-        <div className="sm:mx-5 mx-2  hover:text-xl ">
+        <div className="sm:mx-5 mx-2 text-xl hover:text-2xl ">
           <Link to="/mobile">
             <img
-              className="sm:w-[700px] w-[1000px] rounded-md hover:shadow-white"
+              className=" w-[1000px] rounded-md hover:shadow-white"
               src={app}
               alt="webimg"
             />
           </Link>
-          <p className="mt-7 ">Soluciones móviles</p>
+          <p className="mt-7">Soluciones móviles</p>
         </div>
-        <div className="sm:mx-5 mx-2 hover:text-xl ">
+        <div className="sm:mx-5 mx-2 text-xl hover:text-2xl ">
           <Link to="/web">
             <img
-              className="sm:w-[700px] w-[1000px]  rounded-md hover:shadow-white"
+              className="w-[1000px]  rounded-md hover:shadow-white"
               src={web}
               alt="movimg"
             />
           </Link>
           <p className="mt-7">Soluciones web</p>
         </div>
-        <div className="sm:mx-5 mx-2  hover:text-xl ">
+        <div className="sm:mx-5 mx-2 text-xl hover:text-2xl ">
           <Link to="/design">
             <img
-              className="sm:w-[700px] w-[1000px] rounded-md hover:shadow-white"
+              className="w-[1000px] rounded-md hover:shadow-white"
               src={diseños}
               alt="desimg"
             />
