@@ -1,6 +1,7 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import instagra from "../assets/instagram.svg";
 import whatsapp from "../assets/whatsapp.svg";
+import emailjs from "@emailjs/browser";
 
 type IFormInput = {
   name: string;
@@ -13,6 +14,9 @@ type IFormInput = {
 };
 
 export const Contact = () => {
+  console.log(import.meta.env.VITE_USER);
+  console.log(import.meta.env.VITE_EMAIL_SERVICE_ID);
+
   const {
     handleSubmit,
     register,
@@ -30,10 +34,38 @@ export const Contact = () => {
   });
 
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
+    // e.preventDefault();
     console.log("DATA", data);
-  };
 
-  console.log(errors);
+    const templateData = {
+      from_name: data.name,
+      from_email: data.email,
+      from_state: data.state,
+      from_project: data.project,
+      to_name: "Pandora",
+      message: data.description,
+    };
+
+    console.log("primer paso");
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+        templateData,
+        import.meta.env.VITE_EMAIL_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log("Entro");
+          console.log(result.text);
+        },
+        (error) => {
+          console.log("No ntro");
+          console.log("Error sending Email", error.text);
+        }
+      );
+    console.log("paso final");
+  };
 
   return (
     <section
@@ -42,8 +74,8 @@ export const Contact = () => {
     >
       <div className="sm:text-center">
         <p className="text-2xl mb-5 ">Contáctanos:</p>
-        <p>martinrocio.1992@gmail.com</p>
-        <p>+54 2984391081</p>
+        {/* <p>martinrocio.1992@gmail.com</p>
+        <p>+54 2984391081</p> */}
         <div className="flex mt-5 cursor-pointer">
           <a href="https://api.whatsapp.com/send?phone=542984391081&text=">
             <img className="w-7 " src={whatsapp} alt="insta" />
@@ -57,9 +89,8 @@ export const Contact = () => {
       <div className="border-b border-gray-900/10 sm:ml-[100px] mt-[40px]">
         <p className="text-2xl sm:mb-5 mb-0 ">Cotizá con nosotros:</p>
         <form
+          // onSubmit={sendEmail}
           onSubmit={handleSubmit(onSubmit)}
-          action="https://formsubmit.co/martinrocio.1992@gmail.com"
-          method="POST"
         >
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-3">
@@ -124,10 +155,10 @@ export const Contact = () => {
                   {...register("project", { required: true })}
                   className="pl-3 block w-full rounded-md border-0 py-2 text-black shadow-sm   sm:max-w-xs sm:text-sm sm:leading-6"
                 >
+                  <option value="app">Aplicación Android</option>
                   <option value="we">Web estática</option>
                   <option value="wd">Web dinámica</option>
-                  <option value="app">Aplicación Android</option>
-                  <option value="de">Diseño</option>
+                  <option value="de">Diseños</option>
                 </select>
               </div>
               {errors.project && (
