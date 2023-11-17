@@ -80,7 +80,7 @@ export const Contact = () => {
           <a href="https://api.whatsapp.com/send?phone=542984391081&text=">
             <img className="w-7 " src={whatsapp} alt="insta" />
           </a>
-          <a>
+          <a href="https://www.instagram.com/pandora.studio.vr/">
             <img className="w-8 ml-8" src={instagra} alt="whats" />
           </a>
         </div>
@@ -96,7 +96,7 @@ export const Contact = () => {
         >
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-3">
-              <label className="block text-sm font-medium leading-6 text-white">
+              <label className="block text-sm font-black  leading-6 text-white">
                 Nombre y apellido
               </label>
               <div className="mt-2">
