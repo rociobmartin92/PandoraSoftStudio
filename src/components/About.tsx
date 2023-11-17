@@ -2,7 +2,7 @@ export const About = () => {
   return (
     <section
       id="About"
-      className="text-white font-raj text-center px-[5%]  sm:px-[15%] mt-12 "
+      className="text-white font-raj text-center px-[5%] sm:font-medium font-black   sm:px-[15%] mt-12 "
     >
       <p className="text-2xl mb-5">Sobre Pandora </p>
       <p className="text-xl sm:text-lg line-height: 7rem">
