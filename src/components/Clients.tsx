@@ -1,3 +1,4 @@
+import React from "react";
 import app from "../assets/images/app.png";
 import web from "../assets/images/web.png";
 import diseños from "../assets/images/diseños.png";

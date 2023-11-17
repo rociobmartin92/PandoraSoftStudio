@@ -1,4 +1,4 @@
-import { useForm, SubmitHandler } from "react-hook-form";
+import React, { useForm, SubmitHandler } from "react-hook-form";
 import instagra from "../assets/instagram.svg";
 import whatsapp from "../assets/whatsapp.svg";
 import emailjs from "@emailjs/browser";
@@ -13,9 +13,18 @@ type IFormInput = {
   project: string;
 };
 
+interface ITemplate extends HTMLFormElement {
+  from_name: string;
+  from_email: string;
+  message: string;
+  from_state: string;
+  from_project: string;
+  to_name: string;
+}
+
 export const Contact = () => {
-  console.log(import.meta.env.VITE_USER);
-  console.log(import.meta.env.VITE_EMAIL_SERVICE_ID);
+
+
 
   const {
     handleSubmit,
@@ -37,7 +46,9 @@ export const Contact = () => {
     // e.preventDefault();
     console.log("DATA", data);
 
+
     const templateData = {
+
       from_name: data.name,
       from_email: data.email,
       from_state: data.state,
