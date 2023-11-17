@@ -95,14 +95,14 @@ export const Contact = () => {
       </div>
 
       <div className="border-b border-gray-900/10 sm:ml-[100px] mt-[40px]">
-        <p className="text-2xl sm:mb-5 mb-0 ">Cotizá con nosotros:</p>
+        <p className="text-2xl sm:mb-5 mb-0 font-bold">Cotizá con nosotros:</p>
         <form
           // onSubmit={sendEmail}
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-3">
-              <label className="block text-md font-medium leading-6 text-white">
+              <label className="block text-md font-bold leading-6 text-white">
                 Nombre y apellido
               </label>
               <div className="mt-2">
@@ -113,13 +113,13 @@ export const Contact = () => {
                 />
               </div>
               {errors.name && (
-                <span className="text-xs text-yellow-400">
+                <span className="text-xs font-bold text-yellow-400">
                   Este campo es requerido
                 </span>
               )}
             </div>
             <div className="sm:col-span-3">
-              <label className="block text-smd font-medium leading-6 text-white">
+              <label className="block text-smd font-bold leading-6 text-white">
                 Email
               </label>
               <div className="mt-2">
@@ -130,14 +130,14 @@ export const Contact = () => {
                 />
               </div>
               {errors.email && (
-                <span className="text-xs text-yellow-400">
+                <span className="text-xs font-bold text-yellow-400">
                   Este campo es requerido
                 </span>
               )}
             </div>
 
             <div className="sm:col-span-4">
-              <label className="block text-md font-medium leading-6 text-white">
+              <label className="block text-md font-bold leading-6 text-white">
                 Tipo de emprendimiento
               </label>
               <div className="mt-2">
@@ -148,14 +148,14 @@ export const Contact = () => {
                 />
               </div>
               {errors.description && (
-                <span className="text-xs text-yellow-400">
+                <span className="text-xs font-bold text-yellow-400">
                   Este campo es requerido
                 </span>
               )}
             </div>
 
             <div className="sm:col-span-3">
-              <label className="block text-sm font-medium leading-6 text-white">
+              <label className="block text-md font-bold leading-6 text-white">
                 Estoy interesado en
               </label>
               <div className="mt-2">
@@ -170,14 +170,14 @@ export const Contact = () => {
                 </select>
               </div>
               {errors.project && (
-                <span className="text-xs text-yellow-400">
+                <span className="text-xs font-bold text-yellow-400">
                   Este campo es requerido
                 </span>
               )}
             </div>
 
             <div className="sm:col-span-2 sm:col-start-1">
-              <label className="block text-sm font-medium leading-6 text-white">
+              <label className="block text-md font-bold leading-6 text-white">
                 País
               </label>
               <div className="mt-2">
@@ -194,7 +194,7 @@ export const Contact = () => {
               </div>
             </div>
             <div className="sm:col-span-2 ">
-              <label className="block text-sm font-medium leading-6 text-white">
+              <label className="block text-md font-bold leading-6 text-white">
                 City
               </label>
               <div className="mt-2">
@@ -207,7 +207,7 @@ export const Contact = () => {
             </div>
 
             <div className="sm:col-span-2">
-              <label className="block text-sm font-medium leading-6 text-white">
+              <label className="block text-md font-bold  leading-6 text-white">
                 Provincia/Estado
               </label>
               <div className="mt-2">
@@ -220,7 +220,7 @@ export const Contact = () => {
             </div>
           </div>
           <button
-            className="mt-8 p-2 border-[#1f203c] border-2 rounded-lg  hover:border-[#2d2e46]"
+            className="mt-8 p-2 font-bold border-[#1f203c] border-2 rounded-lg  hover:border-[#2d2e46]"
             type="submit"
           >
             Enviar
