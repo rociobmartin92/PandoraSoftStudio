@@ -8,10 +8,10 @@ import { Mobile } from "./screens/Mobile";
 import { Web } from "./screens/Web";
 import { Design } from "./screens/Design";
 import { Main } from "./screens/Main";
+import { Planes } from "./components/Planes";
 
 function App() {
   const [show, setShow] = useState(true);
-
 
   setTimeout(() => {
     setShow(false);
@@ -35,6 +35,7 @@ function App() {
               <Route path="/mobile" element={<Mobile />} />
               <Route path="/web" element={<Web />} />
               <Route path="/design" element={<Design />} />
+              <Route path="/planes" element={<Planes />} />
             </Routes>
           </>
         )}

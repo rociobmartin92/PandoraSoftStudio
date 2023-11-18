@@ -4,6 +4,7 @@ import { About } from "../components/About";
 import { Clients } from "../components/Clients";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
+import { Planes } from "../components/Planes";
 
 export const Main = () => {
   return (
@@ -13,6 +14,7 @@ export const Main = () => {
       <About />
       <Clients />
       <Contact />
+      <Planes />
       <Footer />
     </div>
   );
