@@ -103,7 +103,7 @@ export const Contact = () => {
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-3">
               <label className="block text-md font-bold leading-6 text-white">
-                Nombre y apellido
+                Nombre:
               </label>
               <div className="mt-2">
                 <input
@@ -120,7 +120,7 @@ export const Contact = () => {
             </div>
             <div className="sm:col-span-3">
               <label className="block text-smd font-bold leading-6 text-white">
-                Email
+                Email:
               </label>
               <div className="mt-2">
                 <input
@@ -138,7 +138,7 @@ export const Contact = () => {
 
             <div className="sm:col-span-4">
               <label className="block text-md font-bold leading-6 text-white">
-                Tipo de emprendimiento
+                Tipo de emprendimiento:
               </label>
               <div className="mt-2">
                 <input
@@ -156,7 +156,7 @@ export const Contact = () => {
 
             <div className="sm:col-span-3">
               <label className="block text-md font-bold leading-6 text-white">
-                Estoy interesado en
+                Estoy interesado en:
               </label>
               <div className="mt-2">
                 <select
@@ -178,7 +178,7 @@ export const Contact = () => {
 
             <div className="sm:col-span-2 sm:col-start-1">
               <label className="block text-md font-bold leading-6 text-white">
-                País
+                País:
               </label>
               <div className="mt-2">
                 <select
@@ -195,7 +195,7 @@ export const Contact = () => {
             </div>
             <div className="sm:col-span-2 ">
               <label className="block text-md font-bold leading-6 text-white">
-                City
+                Ciudad:
               </label>
               <div className="mt-2">
                 <input
@@ -208,7 +208,7 @@ export const Contact = () => {
 
             <div className="sm:col-span-2">
               <label className="block text-md font-bold  leading-6 text-white">
-                Provincia/Estado
+                Provincia/Estado:
               </label>
               <div className="mt-2">
                 <input
