@@ -164,10 +164,10 @@ export const Contact = () => {
                   {...register("project", { required: true })}
                   className="pl-3 block w-full rounded-md border-0 py-2 text-black shadow-sm   sm:max-w-xs sm:text-sm sm:leading-6"
                 >
-                  <option value="appandroid">Aplicación móvil Android</option>
                   <option value="webestatica">Web estática</option>
                   <option value="webdinamica">Web dinámica</option>
                   <option value="diseño">Diseño</option>
+                  <option value="appandroid">Aplicación móvil Android</option>
                   <option value="planbronce">Plan Bronce</option>
                   <option value="planestandar">Plan Estandar</option>
                   <option value="planestandar">Plan Premium</option>
