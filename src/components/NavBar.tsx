@@ -14,11 +14,11 @@ const NavBar = () => {
           <a href="#Contact">Contacto</a>
         </li>
       </ul>
-      <img
+      {/* <img
         src={menu}
         alt="menu"
         className="w-10 h-10 cursor-pointer sm:hidden items-center mt-13"
-      />
+      /> */}
     </>
   );
 };

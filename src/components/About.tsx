@@ -4,8 +4,8 @@ export const About = () => {
       id="About"
       className="text-white font-raj  text-center px-[5%]  sm:px-[15%] mt-12 "
     >
-      <p className="text-2xl font-black sm:font-semibold mb-5">Sobre Pandora</p>
-      <p className="text-xl sm:text-lg line-height: 7rem">
+      <p className="text-3xl font-black sm:font-semibold mb-5">Sobre Pandora</p>
+      <p className="text-xl sm:text-lg line-height: 7rem font-black sm:font-semibold">
         Pandora es una empresa de servicio completo que ofrece desarrollo web,
         desarrollo de aplicaciones móviles y servicios de diseño personalizados
         para tu negocio.

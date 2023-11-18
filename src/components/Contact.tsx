@@ -81,15 +81,15 @@ export const Contact = () => {
       className="text-white font-raj sm:flex items-baseline  px-[15%] mt-[120px] mb-6 w-screen"
     >
       <div className="sm:text-center">
-        <p className="text-2xl mb-5 ">Contáctanos:</p>
+        <p className="text-2xl mb-5 mb-0 font-bold">Contáctanos:</p>
         <p>martinrocio.1992@gmail.com</p>
         <p>+54 2984391081</p>
-        <div className="flex mt-5 cursor-pointer">
+        <div className="flex mt-5 ml-10 cursor-pointer">
           <a href="https://api.whatsapp.com/send?phone=542984391081&text=">
-            <img className="w-7 " src={whatsapp} alt="insta" />
+            <img className="w-8 " src={whatsapp} alt="insta" />
           </a>
           <a href="https://www.instagram.com/pandora.studio.vr/">
-            <img className="w-8 ml-8" src={instagra} alt="whats" />
+            <img className="w-9 ml-8" src={instagra} alt="whats" />
           </a>
         </div>
       </div>

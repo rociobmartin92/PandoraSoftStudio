@@ -10,7 +10,7 @@ export const Clients = () => {
       id="Clients"
       className="text-white font-raj text-center px-[15%] mt-[120px] mb-6 w-screen "
     >
-      <p className="sm:text-2xl text-xl font-black sm:font-semibold mb-5">
+      <p className="sm:text-3xl text-2xl font-black sm:font-semibold mb-5">
         Servicios
       </p>
 
