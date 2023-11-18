@@ -160,13 +160,18 @@ export const Contact = () => {
               </label>
               <div className="mt-2">
                 <select
+                  defaultValue="planbronce"
                   {...register("project", { required: true })}
                   className="pl-3 block w-full rounded-md border-0 py-2 text-black shadow-sm   sm:max-w-xs sm:text-sm sm:leading-6"
                 >
-                  <option value="app">Aplicación Android</option>
-                  <option value="we">Web estática</option>
-                  <option value="wd">Web dinámica</option>
-                  <option value="de">Diseños</option>
+                  <option value="appandroid">Aplicación Android</option>
+                  <option value="planbronce">Plan Bronce</option>
+                  <option value="planestandar">Plan Estandar</option>
+                  <option value="planestandar">Plan Premium</option>
+                  <option value="appandroid">Aplicación Android</option>
+                  <option value="webestatica">Web estática</option>
+                  <option value="webdinamica">Web dinámica</option>
+                  <option value="diseño">Diseño</option>
                 </select>
               </div>
               {errors.project && (

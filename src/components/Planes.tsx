@@ -4,11 +4,11 @@ export const Planes = () => {
   return (
     <section
       id="Planes"
-      className="text-white font-raj sm:flex items-baseline  px-[15%] mt-[120px] mb-6 w-screen"
+      className="text-white font-raj  items-baseline font-black sm:font-semibold px-[15%] mt-[120px] mb-6 w-screen"
     >
       <div className="sm:flex justify-around">
         {/* <!-- BRONCE --> */}
-        <div className=" p-4 sm:mx-9">
+        <div className=" p-4 ">
           <p className="text-xl font-bold mb-4">BRONCE</p>
           <img
             className="w-24 h-24 object-cover mb-4"
@@ -28,7 +28,7 @@ export const Planes = () => {
             <h6 className="text-sm">ÚNICA VEZ</h6>
           </div>
           <a
-            href="#form"
+            href="#Contact"
             target="_self"
             className="bg-blue-500 text-white px-4 py-2 mt-4 block"
           >
@@ -37,7 +37,7 @@ export const Planes = () => {
         </div>
 
         {/* <!-- ESTRELLA --> */}
-        <div className=" p-4 sm:mx-9">
+        <div className=" p-4 ">
           <p className="text-xl font-bold mb-4">RECOMENDADO</p>
           <img
             className="w-24 h-24 object-cover mb-4"
@@ -50,10 +50,8 @@ export const Planes = () => {
             <li>Diseño personalizado</li>
             <li>Diseño responsive</li>
             <li>6 secciones</li>
-            <li>Botón de Whatsapp</li>
             <li>Formulario de contacto</li>
             <li>Conexión con redes sociales</li>
-            <li>Alta / Modificación Google</li>
           </ul>
           <div className="mt-4">
             <div className="text-xl font-bold">AR$</div>
@@ -61,7 +59,7 @@ export const Planes = () => {
             <h6 className="text-sm">ÚNICA VEZ</h6>
           </div>
           <a
-            href="#form"
+            href="#Contact"
             target="_self"
             className="bg-blue-500 text-white px-4 py-2 mt-4 block"
           >
@@ -82,11 +80,9 @@ export const Planes = () => {
           <ul className="list-disc">
             <li>Diseño personalizado</li>
             <li>Diseño responsive</li>
-            <li>10 secciones</li>
-            <li>Botón de Whatsapp</li>
-            <li>Formulario de contacto</li>
+            <li>6 secciones</li>
             <li>Conexión con redes sociales</li>
-            <li>Alta / Modificación Google</li>
+            <li>Formulario de contacto</li>
             <li>Autogestionable</li>
           </ul>
           <div className="mt-4">
@@ -95,7 +91,7 @@ export const Planes = () => {
             <h6 className="text-sm">ÚNICA VEZ</h6>
           </div>
           <a
-            href="#form"
+            href="#Contact"
             target="_self"
             className="bg-blue-500 text-white px-4 py-2 mt-4 block"
           >
