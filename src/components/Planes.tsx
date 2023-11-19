@@ -72,7 +72,7 @@ export const Planes = () => {
         {/* <!-- PREMIUM --> */}
 
         <div className=" p-4 sm:mx-9 ">
-          <p className="text-xl font-bold mb-4">E-COMMERCE</p>
+          <p className="text-xl font-bold mb-4">Premium</p>
           <img
             className="w-24 h-24 object-cover mb-4"
             src="https://cdcpublicidad.com.ar/wp-content/uploads/2023/02/premium.png"
@@ -87,17 +87,11 @@ export const Planes = () => {
             <li>Conexión con redes sociales</li>
             <li>Formulario de contacto</li>
             <li>Autenticación</li>
-            <li>Lista de productos</li>
-            <li>Carrito</li>
-            <li>
-              Pagos mediante link a Mercado Pago y <br /> y Transferencia
-              bancaria
-            </li>
             <li>Autogestionable</li>
           </ul>
           <div className="mt-4">
             <div className="text-xl font-bold">AR$</div>
-            <span className="text-2xl font-bold">930.000</span>
+            <span className="text-2xl font-bold">230.000</span>
             <h6 className="text-sm">ÚNICA VEZ</h6>
           </div>
           <a
