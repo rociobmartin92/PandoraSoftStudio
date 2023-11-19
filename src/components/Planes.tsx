@@ -21,10 +21,11 @@ export const Planes = () => {
             <li>Diseño personalizado</li>
             <li>Diseño responsive</li>
             <li>4 secciones</li>
+            <li>Conexión con redes sociales</li>
           </ul>
           <div className="mt-4">
             <div className="text-xl font-bold">AR$</div>
-            <span className="text-2xl font-bold">120000</span>
+            <span className="text-2xl font-bold">60.000</span>
             <h6 className="text-sm">ÚNICA VEZ</h6>
           </div>
           <a
@@ -49,13 +50,14 @@ export const Planes = () => {
           <ul className="list-disc">
             <li>Diseño personalizado</li>
             <li>Diseño responsive</li>
-            <li>6 secciones</li>
+            <li>5 secciones</li>
             <li>Formulario de contacto</li>
             <li>Conexión con redes sociales</li>
+            <li>Autogestionable</li>
           </ul>
           <div className="mt-4">
             <div className="text-xl font-bold">AR$</div>
-            <span className="text-2xl font-bold">185000</span>
+            <span className="text-2xl font-bold">125.000</span>
             <h6 className="text-sm">ÚNICA VEZ</h6>
           </div>
           <a
@@ -68,8 +70,9 @@ export const Planes = () => {
         </div>
 
         {/* <!-- PREMIUM --> */}
+
         <div className=" p-4 sm:mx-9 ">
-          <p className="text-xl font-bold mb-4">PREMIUM</p>
+          <p className="text-xl font-bold mb-4">E-COMMERCE</p>
           <img
             className="w-24 h-24 object-cover mb-4"
             src="https://cdcpublicidad.com.ar/wp-content/uploads/2023/02/premium.png"
@@ -80,14 +83,21 @@ export const Planes = () => {
           <ul className="list-disc">
             <li>Diseño personalizado</li>
             <li>Diseño responsive</li>
-            <li>6 secciones</li>
+            <li>5 secciones</li>
             <li>Conexión con redes sociales</li>
             <li>Formulario de contacto</li>
+            <li>Autenticación</li>
+            <li>Lista de productos</li>
+            <li>Carrito</li>
+            <li>
+              Pagos mediante link a Mercado Pago y <br /> y Transferencia
+              bancaria
+            </li>
             <li>Autogestionable</li>
           </ul>
           <div className="mt-4">
             <div className="text-xl font-bold">AR$</div>
-            <span className="text-2xl font-bold">250000</span>
+            <span className="text-2xl font-bold">930.000</span>
             <h6 className="text-sm">ÚNICA VEZ</h6>
           </div>
           <a
