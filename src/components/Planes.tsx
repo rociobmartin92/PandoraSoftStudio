@@ -25,7 +25,7 @@ export const Planes = () => {
           </ul>
           <div className="mt-4">
             <div className="text-xl font-bold">AR$</div>
-            <span className="text-2xl font-bold">60.000</span>
+            <span className="text-2xl font-bold">80 USD</span>
             <h6 className="text-sm">ÚNICA VEZ</h6>
           </div>
           <a
@@ -57,7 +57,7 @@ export const Planes = () => {
           </ul>
           <div className="mt-4">
             <div className="text-xl font-bold">AR$</div>
-            <span className="text-2xl font-bold">125.000</span>
+            <span className="text-2xl font-bold">180 USD</span>
             <h6 className="text-sm">ÚNICA VEZ</h6>
           </div>
           <a
@@ -91,7 +91,7 @@ export const Planes = () => {
           </ul>
           <div className="mt-4">
             <div className="text-xl font-bold">AR$</div>
-            <span className="text-2xl font-bold">260.000</span>
+            <span className="text-2xl font-bold">600 USD</span>
             <h6 className="text-sm">ÚNICA VEZ</h6>
           </div>
           <a

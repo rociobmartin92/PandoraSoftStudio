@@ -1,5 +1,5 @@
 import "./App.css";
-import Logo from "../public/Logo.jpg";
+import Logo from "./assets/images/logosinfondo.png";
 import { useState } from "react";
 import { Stack } from "@mui/material";
 
