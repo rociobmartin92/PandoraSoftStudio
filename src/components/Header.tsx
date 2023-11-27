@@ -1,5 +1,5 @@
 import NavBar from "./NavBar";
-import pandora from "../../public/images/pandora.png";
+import pandora from "../assets/images/pandora.png";
 
 export const Header = () => {
   return (

@@ -1,4 +1,4 @@
-import des from "../../public/images/des.jpeg";
+import des from "../assets/images/des.jpeg";
 
 export const Design = () => {
   return (
