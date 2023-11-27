@@ -11,8 +11,8 @@ const Planes = lazy(() => import("../components/Planes"));
 
 const Main = () => {
   return (
-    <div className="w-[100%]">
-      <Suspense fallback={<h1>Cargando..</h1>}>
+    <Suspense fallback={<h1>Cargando..</h1>}>
+      <div className="w-[100%]">
         <Header />
         <MainComponent />
         <About />
@@ -20,8 +20,8 @@ const Main = () => {
         <Contact />
         <Planes />
         <Footer />
-      </Suspense>
-    </div>
+      </div>
+    </Suspense>
   );
 };
 
