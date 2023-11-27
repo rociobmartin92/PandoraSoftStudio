@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Planes = () => {
+const Planes = () => {
   return (
     <section
       id="Planes"
@@ -106,3 +106,5 @@ export const Planes = () => {
     </section>
   );
 };
+
+export default Planes;

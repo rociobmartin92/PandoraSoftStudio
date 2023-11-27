@@ -1,4 +1,4 @@
-import menu from "../assets/images/menu.png";
+import React from "react";
 
 const NavBar = () => {
   return (

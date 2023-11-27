@@ -1,10 +1,11 @@
+import React from "react";
 import webdesign from "../assets/webdesign.jpeg";
 import ConstructionIcon from "@mui/icons-material/Construction";
 import BrushIcon from "@mui/icons-material/Brush";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import ImportantDevicesIcon from "@mui/icons-material/ImportantDevices";
 
-export const Web = () => {
+const Web = () => {
   return (
     <div className="h-screen ">
       <div className="text-white p-8 rounded-md flex justify-between">
@@ -52,3 +53,5 @@ export const Web = () => {
     </div>
   );
 };
+
+export default Web;

@@ -1,14 +1,16 @@
+import React from "react";
 import "./App.css";
 import Logo from "./assets/images/logosinfondo.png";
 import { useState } from "react";
 import { Stack } from "@mui/material";
-
+import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Mobile } from "./screens/Mobile";
-import { Web } from "./screens/Web";
-import { Design } from "./screens/Design";
-import { Main } from "./screens/Main";
-import { Planes } from "./components/Planes";
+
+const Mobile = lazy(() => import("./screens/Mobile"));
+const Web = lazy(() => import("./screens/Web"));
+const Design = lazy(() => import("./screens/Design"));
+const Main = lazy(() => import("./screens/Main"));
+const Planes = lazy(() => import("./components/Planes"));
 
 function App() {
   const [show, setShow] = useState(true);
@@ -29,14 +31,15 @@ function App() {
             {/* <div className="w-[100%]">
               <Main />
             </div> */}
-            <Routes>
-              <Route path="/" element={<Main />} />
-
-              <Route path="/mobile" element={<Mobile />} />
-              <Route path="/web" element={<Web />} />
-              <Route path="/design" element={<Design />} />
-              <Route path="/planes" element={<Planes />} />
-            </Routes>
+            <Suspense fallback={<h1>Cargando..</h1>}>
+              <Routes>
+                <Route path="/" element={<Main />} />
+                <Route path="/mobile" element={<Mobile />} />
+                <Route path="/web" element={<Web />} />
+                <Route path="/design" element={<Design />} />
+                <Route path="/planes" element={<Planes />} />
+              </Routes>
+            </Suspense>
           </>
         )}
       </Stack>

@@ -1,6 +1,6 @@
 import des from "../assets/images/des.jpeg";
 
-export const Design = () => {
+const Design = () => {
   return (
     <div className="flex items-center justify-center h-screen w-screen">
       <div className="text-white text-center">
@@ -15,3 +15,5 @@ export const Design = () => {
     </div>
   );
 };
+
+export default Design;

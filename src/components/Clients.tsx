@@ -1,10 +1,8 @@
 import React from "react";
-import app from "../assets/images/app.png";
-import web from "../assets/images/web.png";
-import diseños from "../assets/images/diseños.png";
+import { diseños, web, app } from "../assets/images";
 import { Link } from "react-router-dom";
 
-export const Clients = () => {
+const Clients = () => {
   return (
     <section
       id="Clients"
@@ -49,3 +47,5 @@ export const Clients = () => {
     </section>
   );
 };
+
+export default Clients;

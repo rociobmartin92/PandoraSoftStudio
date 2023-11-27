@@ -1,6 +1,5 @@
 import React, { useForm, SubmitHandler } from "react-hook-form";
-import instagra from "../assets/instagram.svg";
-import whatsapp from "../assets/whatsapp.svg";
+import { instagram, whatsapp } from "../assets/images/index";
 import emailjs from "@emailjs/browser";
 
 type IFormInput = {
@@ -22,7 +21,7 @@ interface ITemplate extends HTMLFormElement {
   to_name: string;
 }
 
-export const Contact = () => {
+const Contact = () => {
   console.log(import.meta.env.VITE_USER);
 
   const {
@@ -89,7 +88,7 @@ export const Contact = () => {
             <img className="w-8 " src={whatsapp} alt="insta" />
           </a>
           <a href="https://www.instagram.com/pandora.studio.vr/">
-            <img className="w-9 ml-8" src={instagra} alt="whats" />
+            <img className="w-9 ml-8" src={instagram} alt="whats" />
           </a>
         </div>
       </div>
@@ -234,3 +233,5 @@ export const Contact = () => {
     </section>
   );
 };
+
+export default Contact;
