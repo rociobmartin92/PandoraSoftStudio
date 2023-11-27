@@ -1,7 +1,7 @@
 import React from "react";
-import app from "../assets/images/app.png";
-import web from "../assets/images/web.png";
-import diseños from "../assets/images/diseños.png";
+import app from "../../public/images/app.png";
+import web from "../../public//images/web.png";
+import diseños from "../../public//images/diseños.png";
 import { Link } from "react-router-dom";
 
 export const Clients = () => {

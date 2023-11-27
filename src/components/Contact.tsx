@@ -1,6 +1,6 @@
 import React, { useForm, SubmitHandler } from "react-hook-form";
-import instagra from "../assets/instagram.svg";
-import whatsapp from "../assets/whatsapp.svg";
+import instagra from "../../public/images/instagram.svg";
+import whatsapp from "../../public/images/whatsapp.svg";
 import emailjs from "@emailjs/browser";
 
 type IFormInput = {

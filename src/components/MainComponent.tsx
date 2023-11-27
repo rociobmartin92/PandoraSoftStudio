@@ -1,4 +1,4 @@
-import imgmain from "../assets/images/imgmain4.png";
+import imgmain from "../../public/images/imgmain4.png";
 
 export const MainComponent = () => {
   return (
